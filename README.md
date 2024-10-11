@@ -1,9 +1,9 @@
-Nombre del proyecto: (Aún no está decidido)
-Nombre del equipo: SDM Developers
+Nombre del proyecto: AsturSpots  
+Nombre del equipo: SDM Developers  
 Miembros del equipo:
 - Celia Bobo Rodríguez-Noriega, UO222898
 - Paula Alguacil Fernández, UO294621
-- Álvaro Arias Martínez De Vega, UO287568
+- Álvaro Arias Martínez De Vega, UO287568  
 Descripción del proyecto: El proyecto consistirá en una aplicación sobre Asturias. Tendra una pantalla inicial 
 en el que se mostrará información relevante del Principado de Asturias, como puede ser la población, capital o superficie.
 Tendrá una barra desplegable desde la cual podremos seleccionar una categoría para obtener más información sobre un tema.
