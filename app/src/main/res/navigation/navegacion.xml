@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.sdmdevelopers.asturspot.views.InicioFragment"
+        android:label="InicioFragment"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_inicioFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/inicioSesionActivity"
+        android:name="com.sdmdevelopers.asturspot.views.AuthActivity"
+        android:label="InicioSesionActivity"
+        tools:layout="@layout/activity_auth"/>
+    <fragment
+        android:id="@+id/gastronomiaFragment"
+        android:name="com.sdmdevelopers.asturspot.views.GastronomiaFragment"
+        android:label="fragment_gastronomia"
+        tools:layout="@layout/fragment_elemento" >
+        <action
+            android:id="@+id/action_gastronomiaFragment_to_elementoDetalle"
+            app:destination="@id/elementoDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/historiaFragment"
+        android:name="com.sdmdevelopers.asturspot.views.HistoriaFragment"
+        android:label="fragment_historia"
+        tools:layout="@layout/fragment_elemento" >
+        <action
+            android:id="@+id/action_historiaFragment_to_elementoDetalle"
+            app:destination="@id/elementoDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/turismoFragment"
+        android:name="com.sdmdevelopers.asturspot.views.TurismoFragment"
+        android:label="fragment-turismo"
+        tools:layout="@layout/fragment_elemento" >
+
+    <action
+            android:id="@+id/action_turismoFragment_to_elementoDetalle"
+            app:destination="@id/elementoDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.sdmdevelopers.asturspot.views.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_elemento" >
+        <action
+            android:id="@+id/action_favoritosFragment_to_elementoDetalle"
+            app:destination="@id/elementoDetalle" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_eventoDetalle"
+            app:destination="@id/eventoDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/elementoDetalle"
+        android:name="com.sdmdevelopers.asturspot.elemento_detalle.ElementoDetalle"
+        android:label="ElementoDetalle" >
+        <argument
+            android:name="elemento"
+            app:argType="com.sdmdevelopers.asturspot.elemento.ElementoActividad" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventosFragment"
+        android:name="com.sdmdevelopers.asturspot.views.EventosFragment"
+        android:label="fragment-eventos"
+        tools:layout="@layout/fragment_elemento" >
+        <action
+            android:id="@+id/action_eventosFragment_to_eventoDetalle"
+            app:destination="@id/eventoDetalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventoDetalle"
+        android:name="com.sdmdevelopers.asturspot.elemento_detalle.EventoDetalle"
+        android:label="content_scrolling_evento"
+        tools:layout="@layout/content_scrolling_evento" >
+    <argument
+        android:name="elemento"
+        app:argType="com.sdmdevelopers.asturspot.elemento.Evento" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.sdmdevelopers.asturspot.views.MapsFragment"
+        android:label="MapsFragment" />
+
+</navigation>

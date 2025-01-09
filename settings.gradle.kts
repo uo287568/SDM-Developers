@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SDM Developers"
+rootProject.name = "AsturSpots"
 include(":app")
+ 

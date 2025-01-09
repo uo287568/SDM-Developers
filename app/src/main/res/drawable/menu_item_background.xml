@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo cuando el elemento está seleccionado -->
+    <item android:state_checked="true" android:drawable="@drawable/rounded_item_background" />
+    <!-- Fondo cuando el elemento está presionado -->
+    <item android:state_pressed="true" android:drawable="@drawable/rounded_item_background" />
+    <!-- Fondo por defecto -->
+    <item android:drawable="@android:color/transparent" />
+</selector>

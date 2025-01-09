@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105530433144",
+    "project_id": "asturspots-sdm-developers",
+    "storage_bucket": "asturspots-sdm-developers.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105530433144:android:1d3e6c8faeb437daf2578d",
+        "android_client_info": {
+          "package_name": "com.sdmdevelopers.asturspot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJzLAs-CmpBR0z0EudDwbH0smQ1QweDdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
